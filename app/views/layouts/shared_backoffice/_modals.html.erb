@@ -1,0 +1,16 @@
+<div class="col-md-12">
+  <div id="modal" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <%= yield :modal_lg_content %>
+        </div>
+    </div>
+  </div>
+  <div class="modal fade" id="confirm_delete_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+          <div class="modal-content">
+            <%= yield :modal_confirm_delete %>
+          </div>
+      </div>
+  </div>
+</div>

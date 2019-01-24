@@ -1,0 +1,15 @@
+'pt-BR':
+  buttons:
+    new: Novo
+    save: Salvar
+    show: Mostrar
+    edit: Editar
+    destroy: Apagar
+    cancel: Cancelar
+    back: Voltar
+    home: Início
+    close: Fechar
+    send: Enviar
+    search: Pesquisar
+    enter: Entrar
+

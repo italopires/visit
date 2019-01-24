@@ -1,0 +1,32 @@
+<!-- Navbar -->
+            <div class="page-sidebar sidebar">
+                <div class="page-sidebar-inner slimscroll">
+                    <div class="sidebar-header">
+                        <div class="sidebar-profile">
+                            <a href="javascript:void(0);" id="profile-menu-link">
+                                <div class="sidebar-profile-image">
+                                    <%= image_tag('backoffice/avatar1.png', class: "img-circle img-responsive", alt: "") %>
+                                </div>
+                                <div class="sidebar-profile-details">
+                                    <span>David Green<br><small>Art Director</small></span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <ul class="menu accordion-menu">
+
+                        <li><a href="index.html" class="waves-effect waves-button"><span class="menu-icon glyphicon glyphicon-home"></span><p>Dashboard</p></a></li>
+
+                        <li class="droplink active open"><a href="#" class="waves-effect waves-button"><span class="menu-icon glyphicon glyphicon-th"></span><p><%= t 'labels.tables' %></p><span class="arrow"></span></a>
+                            <ul class="sub-menu">
+                                <li class="<%= 'active' if params[:controller] == 'backoffice/cities' %>">
+                                    <%= link_to backoffice_cities_path do %>
+                                        <%= City.model_name.human %>
+                                    <% end %>
+                                </li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </div><!-- Page Sidebar Inner -->
+            </div><!-- Page Sidebar -->
